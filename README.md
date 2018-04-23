@@ -18,25 +18,25 @@ NB运营商：电信
 
 * 1、USART3
 
-STML1：PB10（TX）和PB11（RX）
+STML1：PB10（TX）和PB11（RX）。
 
-BC95的RX有一个下拉，TX直接通过50R连接
+BC95的RX有一个下拉，TX直接通过50R连接。
 
-所以设置PB10和PB11为下拉，进入待机模式时，设置为低电平
+所以设置PB10和PB11为下拉，进入待机模式时，设置为低电平。
 
-注：如果要改USARTx，需要改的内容：GPIOx、GPIO_PINx、句柄（及其设置）、GPIO时钟、中断名USARTx_IRQHandler等
+注：如果要改USARTx，需要改的内容：GPIOx、GPIO_PINx、句柄（及其设置）、GPIO时钟、中断名USARTx_IRQHandler等。
 
 * 2、OLED
 
-PB6（SCL）、PB7（SDA）
+PB6（SCL）、PB7（SDA），这两个用于软件模拟IIC。
 
 * 3、LED
 
-PD2、PC10
+PD2、PC10。
 
 * 4、KEY1、KEY2、KEY3
 
-PC13、PC12、PC11
+PC13、PC12、PC11。
 
 * 5、时钟
 
@@ -56,8 +56,9 @@ LM_CS：PC1
 
 * 8、ADC1
 
-PC0
-必须先调用GetAdcValue（包括开启信号调理电路电源、开始ADC转换、关闭ADC转换、关闭信号调理电路电源等过程）
+PC0引脚。
+
+必须先调用GetAdcValue（包括开启信号调理电路电源、开始ADC转换、关闭ADC转换、关闭信号调理电路电源等过程）。
 
 * 9、NVIC
 

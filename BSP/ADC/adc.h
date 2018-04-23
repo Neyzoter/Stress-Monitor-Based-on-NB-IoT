@@ -1,12 +1,16 @@
+/*
+ * Stress Monitor Based on NB-IoT
+ * 项目名称：基于NB-IoT的应力监测系统
+ * 作者：宋超超
+ *
+ * 该代码版权归宋超超所有，请勿用于商业用途。
+ * https://neyzoter.github.io/
+ */
+
 #ifndef _ADC_H
 #define _ADC_H
 #include "sys.h"
 
-/*##################### ADC1 ###################################*/
-/**
-  * @brief  ADC Interface pins
-  *         used to detect motion of Joystick available on Adafruit 1.8 TFT shield
-  */
 #define ZJU_ADCx                                 ADC1
 #define ZJU_ADCx_CLK_ENABLE()                    __HAL_RCC_ADC1_CLK_ENABLE()
 #define ZJU_ADCx_CLK_DISABLE()                   __HAL_RCC_ADC1_CLK_DISABLE()
