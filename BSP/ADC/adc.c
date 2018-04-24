@@ -67,10 +67,10 @@ u16 GetAdcValue(void)
 {
 	u16 adc_temp = 0;
 	LM_ON();//打开应力监测电路的电源
-	vTaskDelay(200);//等待200ms稳定下来
+	vTaskDelay(100);//等待ms稳定下来
 	__HAL_RCC_ADC1_CLK_ENABLE();
 	HAL_ADC_Start_IT(&hadc);
-	vTaskDelay(100);
+	vTaskDelay(20);
 	HAL_ADC_Stop_IT(&hadc);
 	LM_OFF();//关闭应力信号调理电路的电源
 	

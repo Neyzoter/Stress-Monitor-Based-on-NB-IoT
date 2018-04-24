@@ -292,3 +292,30 @@ u32 mypow(u8 m,u8 n)
 	return result;
 }
 
+//m^n函数
+float mypow_float(float m,u8 n)
+{
+	float result=1.0;	 
+	while(n--)result*=m;    
+	return result;
+}
+
+//u16升序排序
+void u16sortup(u16 * ain,u16 len)
+{
+    u16 i,j;
+    u16 t;
+    for(i=0;i<len-1;i++)//n个数的数列总共扫描len-1次
+    {
+        for(j=0;j<len-i-1;j++)//每一趟扫描到a[n-i-2]与a[n-i-1]比较为止结束
+        {
+            if(ain[j]>ain[j+1])//后一位数比前一位数小的话，就交换两个数的位置（升序）
+            {
+               t=ain[j+1];
+               ain[j+1]=ain[j];
+               ain[j]=t;
+            }
+        }
+    }
+}
+

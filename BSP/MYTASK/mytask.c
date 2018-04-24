@@ -9,11 +9,28 @@
 
 #include "mytask.h"
 #include "common.h"
+#include "stdlib.h"
 
 TaskHandle_t GetDataTask_Handler;
 TaskHandle_t IndicatorTask_Handler;
 TaskHandle_t AttachNetworkTask_Handler;
 TaskHandle_t StartTask_Handler;
+
+
+//用于存储数据
+u16 adc_datas[DATA_NUM_NEEDED] = {0};
+
+
+//数值和真实值的关系
+//倍数和零点
+struct ADC_PARA
+{
+	int getZero ;
+	float getMul ;
+	float beta;
+}adc_para = {-1865,3.28,0.8};
+
+
 ////////////////////////////////////////////////////////////
 //板子的状态
 
@@ -29,9 +46,10 @@ TaskHandle_t StartTask_Handler;
 
 MAIN_FLAG flag = {0,"863703035480214",0};
 
+
 /////////////////////////////////////////////////////////////
 
-char Adc_Str[9] = "+000000N\0";
+char Adc_Str[9] = "+000000g\0";
 
 //开始任务任务函数
 void start_task(void *pvParameters)
@@ -69,17 +87,32 @@ void start_task(void *pvParameters)
 void getdata_task(void *pvParameters)
 {
 	static u8 Data_Num = 0;//数据的数量
-	static u32 Adc_Val = 0;
+	static float Adc_Val = 0.0;
     while(1)
     {
 		if(Data_Num<DATA_NUM_NEEDED)//如果还没到数据要求个数
 		{
-			Adc_Val += GetAdcValue();	//采集数据并相加后面取平均
+			adc_datas[Data_Num] = GetAdcValue();	//采集数据并相加后面取平均			
+//			Adc_Val = (adc_para.beta * Adc_Val + (1.0 - adc_para.beta) * (float)GetAdcValue());
 			Data_Num++;
+			vTaskDelay(100);//阻塞态，每5秒采集一次
 		}
-		else if(flag.BRD_STA == BRD_ATTACKED||HAL_RTCEx_BKUPRead(&hrtc,BACKUP_AREA))//如果数据采集够了，而且已经联网了或者从待机唤醒
+		else if(flag.BRD_STA == BRD_ATTACKED||HAL_RTCEx_BKUPRead(&hrtc,BACKUP_AREA)==RESET_FROM_STANDBY)//如果数据采集够了，而且已经联网了或者从待机唤醒
 		{
-			Num2Str(Adc_Str,Adc_Val / Data_Num);//取平均并转化为str
+			if(DATA_NUM_NEEDED>=3)//如果数据个数大于等于3个，简单的去掉异常值（取中值）
+			{
+				u16sortup(adc_datas,DATA_NUM_NEEDED);//升序排序
+				Adc_Val = adc_datas[DATA_NUM_NEEDED/2];//去中间的数据，比如5个，取下标为2的数值
+			}
+			else //如果是只有1个或者2个数据，取第1个数据
+			{
+				Adc_Val = adc_datas[0];
+			}
+//			Adc_Val/=(1.0 - mypow_float(adc_para.beta,Data_Num+1));
+			Adc_Val = adc_para.getMul * (Adc_Val + adc_para.getZero);//得到真实的数据			
+			Adc_Val = (Adc_Val>=0)?Adc_Val:0;//防止出现小于零
+			
+			Num2Str(Adc_Str,(u16)Adc_Val);			
 			flag.BRD_STA = BRD_ATTACKED;//从待机唤醒的话，直接给他赋值
 			if(!MSG_Send(Adc_Str,"8"))//发送5次失败，那么显示error
 			{
@@ -98,7 +131,11 @@ void getdata_task(void *pvParameters)
 			vTaskDelay(2000);
 			Sys_Entry_Standby();//进入待机模式			
 		}
-		vTaskDelay(5000);//阻塞态，每5秒采集一次
+		else//如果已经到了次数，但是还没有联网那么等待两秒
+		{
+			vTaskDelay(2000);//阻塞态，每5秒采集一次
+		}
+		
     }
 }
 

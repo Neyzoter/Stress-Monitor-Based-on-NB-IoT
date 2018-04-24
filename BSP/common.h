@@ -31,7 +31,7 @@ extern MAIN_FLAG flag;
 #define CMD_MAXNUM_STR 				3	//CMD_GOT_MAXNUM用字符串表示最多几位
 #define USART_REC_LEN  			    100  	//定义最大接收字节数
 #define USART_SEND_LEN  			100  	//定义最大发送字节数
-#define DATA_NUM_NEEDED 			1//采集的数据个数
+#define DATA_NUM_NEEDED 			5//采集的数据个数
 
 //接收到北向数据的信息
 typedef struct{

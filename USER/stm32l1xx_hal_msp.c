@@ -142,7 +142,7 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* hadc)
 	  
 	//关闭ADC的时钟节约资源
 	//在使用的时候再打开	  
-	__HAL_RCC_ADC1_CLK_DISABLE();
+//	__HAL_RCC_ADC1_CLK_DISABLE();
   /* USER CODE BEGIN ADC1_MspInit 1 */
 
   /* USER CODE END ADC1_MspInit 1 */

@@ -108,8 +108,6 @@ void Sys_Entry_Standby(void)
 	
 	SET_BIT(PWR->CR, PWR_CR_CWUF);//唤醒标志位清零	
 	
-	//把iwdg关闭
-	
 	
 	HAL_PWR_EnterSTANDBYMode();//进入待机模式	
 }

@@ -72,5 +72,8 @@ u8 StrCmp(u8 *buff,u8 *ch);
 u8 CMD_Anls(u8 cmd[]);
 u16 Lenstr2Lennum(u8 lenstr[]);
 u16 HexStr2Str(char * HexStr,char * Str);
+float mypow_float(float m,u8 n);
+void u16sortup(u16 * ain,u16 len);
+
 #endif
 
