@@ -668,6 +668,11 @@
           <GroupName>FreeRTOS</GroupName>
           <Files>
             <File>
+              <FileName>FreeRTOSConfig.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\FreeRTOS\include\FreeRTOSConfig.h</FilePath>
+            </File>
+            <File>
               <FileName>croutine.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FreeRTOS\croutine.c</FilePath>
