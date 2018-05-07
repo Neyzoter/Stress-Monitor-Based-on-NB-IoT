@@ -84,6 +84,7 @@ void InitDisp(void);//显示初始化
 void cmdDisp(u8 * cmd);//显示cmd
 void sgnDisp(u8 * sgn);//显示信息，比如overtime，信号强度等
 void MsgSentDisp(u8 * msg);//显示已经发送的数据
+void intMsgSentDisp(u16 intmsg);//发送int型数据的显示
 void CMD_GOT_STA_Disp(void);//显示接收到的信息状态
 void CMD_GOT_Disp(void);//显示接收到的数据
 void BrdStaDisp(void);//更新板子的状态OL还是FL

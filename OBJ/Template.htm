@@ -3,11 +3,11 @@
 <title>Static Call Graph - [..\OBJ\Template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\Template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Wed Apr 25 19:46:38 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5040049: Last Updated: Mon May 07 13:19:36 2018
 <BR><P>
-<H3>Maximum Stack Usage =        276 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+<H3>Maximum Stack Usage =        268 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
-getdata_task &rArr; MSG_Send &rArr; MsgDisp &rArr; OLED_ShowStr &rArr; OLED_SetPos &rArr; WriteCmd &rArr; I2C_WriteByte &rArr; IIC_Wait_Ack
+attach_network_task &rArr; AttachNetwork &rArr; CDP_Get_Cfg &rArr; CDP_Cfg &rArr; MsgDisp &rArr; OLED_ShowStr &rArr; OLED_SetPos &rArr; WriteCmd &rArr; I2C_WriteByte &rArr; IIC_Wait_Ack
 <P>
 <H3>
 Mutually Recursive functions
@@ -1146,8 +1146,8 @@ Global Symbols
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AT_NRB
 </UL>
 
-<P><STRONG><a name="[b7]"></a>MSG_Send</STRONG> (Thumb, 192 bytes, Stack size 168 bytes, bc95.o(i.MSG_Send))
-<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = MSG_Send &rArr; MsgDisp &rArr; OLED_ShowStr &rArr; OLED_SetPos &rArr; WriteCmd &rArr; I2C_WriteByte &rArr; IIC_Wait_Ack
+<P><STRONG><a name="[b7]"></a>MSG_Send</STRONG> (Thumb, 192 bytes, Stack size 96 bytes, bc95.o(i.MSG_Send))
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = MSG_Send &rArr; MsgDisp &rArr; OLED_ShowStr &rArr; OLED_SetPos &rArr; WriteCmd &rArr; I2C_WriteByte &rArr; IIC_Wait_Ack
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vTaskDelay
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StopWaitMsg
@@ -1600,7 +1600,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> printf0.o(i.__0printf$0)
 </UL>
 <P><STRONG><a name="[3d]"></a>getdata_task</STRONG> (Thumb, 250 bytes, Stack size 0 bytes, mytask.o(i.getdata_task))
-<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = getdata_task &rArr; MSG_Send &rArr; MsgDisp &rArr; OLED_ShowStr &rArr; OLED_SetPos &rArr; WriteCmd &rArr; I2C_WriteByte &rArr; IIC_Wait_Ack
+<BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = getdata_task &rArr; MSG_Send &rArr; MsgDisp &rArr; OLED_ShowStr &rArr; OLED_SetPos &rArr; WriteCmd &rArr; I2C_WriteByte &rArr; IIC_Wait_Ack
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTCEx_BKUPWrite
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_RTCEx_BKUPRead

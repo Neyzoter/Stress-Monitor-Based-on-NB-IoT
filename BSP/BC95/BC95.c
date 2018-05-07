@@ -592,6 +592,60 @@ u8 CGATT_Set(void)
 //函数作用：发送数据
 //返回参数：成功（>=1,TRUE）或者失败（0,FALSE）
 //*******************************************************
+u8 intMSG_Send(u16 num,u8 len)
+{
+	u8 try_num = AT_NMGS_REPEAT_NUMBER;//重启次数
+	char hexstr[DATA_MAXNUM] = {0,0,0};
+	char numlenstr[3] = {0,0,0};//数据的长度，用十进制字符串表示如8位十进制数，则转化为"8"
+	Dnum2Str(numlenstr,len,1);//这里设置成了1位十进制数，需要优化
+	//数据AT指令
+	char cmd[USART_SEND_LEN] = "AT+NMGS=";
+	Num2HexStr(hexstr,num,2*len);
+	strcat(cmd,numlenstr);
+	strcat(cmd,",");
+	strcat(cmd,hexstr);
+	strcat(cmd,"\r\n");
+	while(try_num)
+	{
+		//初始化界面
+		InitDisp();
+		cmdDisp("MSG Send...");	
+		//开始时间等待
+		StartWaitMsg();
+		//发送数据		
+		printf(cmd);
+		//等待超过3s则说明发生错误
+		while(usart.waittime <= AT_NMGS_WAIT_TIME)//超过5秒
+		{
+			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
+			{
+				//关闭等待
+				StopWaitMsg();//停止等待信息
+				MsgDisp(LINE_FEED);
+				intMsgSentDisp(num);
+				vTaskDelay(NEXT_AT_WAIT_TIME);				
+				return try_num;//返回
+			}
+		#ifdef AT_TICKLESS_ON 
+			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+		#endif
+		}
+		sgnDisp("- OVERTIME -");
+		vTaskDelay(NEXT_AT_WAIT_TIME);
+		try_num--;
+	}
+	//关闭等待
+	StopWaitMsg();
+	return try_num;//剩余尝试次数，如果为0.则表示AT指令测试失败
+}
+
+//*******************************************************
+//函数名称：MSG_Send
+//输入参数：数据的hexstr格式，和数据长度两个hex为一个数据
+//如A为1个数据，hex格式为43
+//函数作用：发送数据
+//返回参数：成功（>=1,TRUE）或者失败（0,FALSE）
+//*******************************************************
 u8 MSG_Send(char * msg,char * len)
 {
 	u8 try_num = AT_NMGS_REPEAT_NUMBER;//重启次数

@@ -27,10 +27,10 @@ extern MAIN_FLAG flag;
 
 //数据状态
 #define CMD_GOT_MAXNUM 				50//接收数据长度
-#define DATA_MAXNUM 				50//发送数据最长
+#define DATA_MAXNUM 				25//发送数据最长
 #define CMD_MAXNUM_STR 				3	//CMD_GOT_MAXNUM用字符串表示最多几位
 #define USART_REC_LEN  			    100  	//定义最大接收字节数
-#define USART_SEND_LEN  			100  	//定义最大发送字节数
+#define USART_SEND_LEN  			50  	//定义最大发送字节数
 #define DATA_NUM_NEEDED 			5//采集的数据个数
 
 //接收到北向数据的信息

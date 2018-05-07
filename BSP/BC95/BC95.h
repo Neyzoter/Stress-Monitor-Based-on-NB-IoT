@@ -31,7 +31,7 @@ u8 CGATT_Get_Set(void);
 u8 CGATT_Set(void);
 //数据发送
 u8 MSG_Send(char * msg,char * len);
-
+u8 intMSG_Send(u16 num,u8 len);//发送int  message
 //数据接收
 u8 CMD_Get(void);
 //简短的函数

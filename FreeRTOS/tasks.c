@@ -2009,11 +2009,14 @@ BaseType_t xReturn;
 		/* This line will only be reached if the kernel could not be started,
 		because there was not enough FreeRTOS heap to create the idle task
 		or the timer task. */
+		/*如果内核没有启动改成功，则会运行到这里
+			导致的原因是创建空闲任务时，没有足够内存*/
 		configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
 	}
 
 	/* Prevent compiler warnings if INCLUDE_xTaskGetIdleTaskHandle is set to 0,
 	meaning xIdleTaskHandle is not used anywhere else. */
+	/*防止编译器报错*/
 	( void ) xIdleTaskHandle;
 }
 /*-----------------------------------------------------------*/

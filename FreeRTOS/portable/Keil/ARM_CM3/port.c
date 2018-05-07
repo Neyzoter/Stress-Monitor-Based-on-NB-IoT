@@ -227,7 +227,7 @@ __asm void prvStartFirstTask( void )
 	PRESERVE8
 
 	/* Use the NVIC offset register to locate the stack. */
-	ldr r0, =0xE000ED08
+	ldr r0, =0xE000ED08		;
 	ldr r0, [r0]
 	ldr r0, [r0]
 

@@ -340,7 +340,7 @@ void sgnDisp(u8 * sgn)
 	taskEXIT_CRITICAL();           //退出临界区
 }
 //*******************************************************
-//函数名称：sgnDisp
+//函数名称：MsgSentDisp
 //输入参数：
 //函数作用：显示发送的数据
 //返回参数：无
@@ -349,6 +349,19 @@ void MsgSentDisp(u8 * msg)
 {
 	taskENTER_CRITICAL();           //进入临界区
 	OLED_ShowStr(0,7,msg,1);
+	taskEXIT_CRITICAL();           //退出临界区
+}
+
+//*******************************************************
+//函数名称：intMsgSentDisp
+//输入参数：
+//函数作用：显示发送的数据
+//返回参数：无
+//*******************************************************
+void intMsgSentDisp(u16 intmsg)
+{
+	taskENTER_CRITICAL();           //进入临界区
+	OLED_ShowNum(0,7, intmsg,6,1);
 	taskEXIT_CRITICAL();           //退出临界区
 }
 //*******************************************************
