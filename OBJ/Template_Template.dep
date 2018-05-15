@@ -44,18 +44,18 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
 I (..\FreeRTOS\include\portable.h)(0x5A3842D8)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x5A3842D8)
@@ -109,16 +109,16 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
-F (.\stm32l1xx_it.c)(0x5AD35677)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\stm32l1xx_it.o --omf_browse ..\obj\stm32l1xx_it.crf --depend ..\obj\stm32l1xx_it.d)
+F (.\stm32l1xx_it.c)(0x5AFAB65B)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\stm32l1xx_it.o --omf_browse ..\obj\stm32l1xx_it.crf --depend ..\obj\stm32l1xx_it.d)
 I (main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -163,19 +163,19 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (stm32l1xx_it.h)(0x59A433AE)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
 I (..\FreeRTOS\include\portable.h)(0x5A3842D8)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x5A3842D8)
@@ -257,9 +257,9 @@ I (..\HALLIB\Inc\stm32l1xx_hal_tim_ex.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_uart.h)(0x5A7DADE5)
 I (..\HALLIB\Inc\stm32l1xx_hal_usart.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_wwdg.h)(0x59A433AE)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\SYSTEM\usart\usart.h)(0x5AC77834)
 I (..\BSP\common.h)(0x5AEFDE59)
@@ -268,13 +268,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -324,19 +324,19 @@ I (..\BSP\common.h)(0x5AEFDE59)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1115,18 +1115,18 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
 I (..\FreeRTOS\include\portable.h)(0x5A3842D8)
 I (..\FreeRTOS\include\deprecated_definitions.h)(0x5A3842D8)
@@ -1180,13 +1180,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 F (..\BSP\I2C_OLED\I2C_OLED.c)(0x5AEFDFF3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\i2c_oled.o --omf_browse ..\obj\i2c_oled.crf --depend ..\obj\i2c_oled.d)
@@ -1229,23 +1229,23 @@ I (..\HALLIB\Inc\stm32l1xx_hal_usart.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_wwdg.h)(0x59A433AE)
 I (..\BSP\IIC\myiic.h)(0x5ADD7142)
 I (..\BSP\I2C_OLED\codetab.h)(0x5344A8A1)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\common.h)(0x5AEFDE59)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\SYSTEM\usart\usart.h)(0x5AC77834)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1300,8 +1300,8 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
-F (..\BSP\BC95\BC95.c)(0x5AEFDFF3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\bc95.o --omf_browse ..\obj\bc95.crf --depend ..\obj\bc95.d)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+F (..\BSP\BC95\BC95.c)(0x5AFAD16A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\bc95.o --omf_browse ..\obj\bc95.crf --depend ..\obj\bc95.d)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\common.h)(0x5AEFDE59)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
@@ -1346,15 +1346,15 @@ I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
 I (..\SYSTEM\usart\usart.h)(0x5AC77834)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1403,8 +1403,8 @@ I (..\HALLIB\Inc\stm32l1xx_hal_uart.h)(0x5A7DADE5)
 I (..\HALLIB\Inc\stm32l1xx_hal_usart.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_wwdg.h)(0x59A433AE)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
-F (..\BSP\LOWPOWER\lowpower.c)(0x5ADF0B76)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\lowpower.o --omf_browse ..\obj\lowpower.crf --depend ..\obj\lowpower.d)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+F (..\BSP\LOWPOWER\lowpower.c)(0x5AFACC2B)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\lowpower.o --omf_browse ..\obj\lowpower.crf --depend ..\obj\lowpower.d)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\SYSTEM\sys\sys.h)(0x5ACA1CBC)
 I (..\USER\stm32l1xx.h)(0x59A433AE)
 I (..\USER\stm32l152xb.h)(0x59A433AE)
@@ -1449,7 +1449,7 @@ I (..\BSP\common.h)(0x5AEFDE59)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
-F (..\BSP\ADC\adc.c)(0x5ADEFFFA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+F (..\BSP\ADC\adc.c)(0x5AFA7ED8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\SYSTEM\sys\sys.h)(0x5ACA1CBC)
 I (..\USER\stm32l1xx.h)(0x59A433AE)
@@ -1489,9 +1489,9 @@ I (..\HALLIB\Inc\stm32l1xx_hal_usart.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_wwdg.h)(0x59A433AE)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\SYSTEM\usart\usart.h)(0x5AC77834)
 I (..\BSP\common.h)(0x5AEFDE59)
@@ -1499,11 +1499,11 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1551,12 +1551,12 @@ I (..\HALLIB\Inc\stm32l1xx_hal_tim_ex.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_uart.h)(0x5A7DADE5)
 I (..\HALLIB\Inc\stm32l1xx_hal_usart.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_wwdg.h)(0x59A433AE)
-F (..\BSP\MYTASK\mytask.c)(0x5AEFE1E6)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\mytask.o --omf_browse ..\obj\mytask.crf --depend ..\obj\mytask.d)
+F (..\BSP\MYTASK\mytask.c)(0x5AFA9A32)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\mytask.o --omf_browse ..\obj\mytask.crf --depend ..\obj\mytask.d)
 I (..\BSP\MYTASK\mytask.h)(0x5ADF0EB5)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -1600,13 +1600,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1732,12 +1732,12 @@ I (..\HALLIB\Inc\stm32l1xx_hal_uart.h)(0x5A7DADE5)
 I (..\HALLIB\Inc\stm32l1xx_hal_usart.h)(0x59A433AE)
 I (..\HALLIB\Inc\stm32l1xx_hal_wwdg.h)(0x59A433AE)
 F (..\BSP\common.h)(0x5AEFDE59)()
-F (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)()
+F (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)()
 F (..\FreeRTOS\croutine.c)(0x5A3842D8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\croutine.o --omf_browse ..\obj\croutine.crf --depend ..\obj\croutine.d)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -1781,13 +1781,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1800,10 +1800,10 @@ I (..\FreeRTOS\include\list.h)(0x5A3842D8)
 I (..\FreeRTOS\include\croutine.h)(0x5A3842D8)
 F (..\FreeRTOS\event_groups.c)(0x5A3842D8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\event_groups.o --omf_browse ..\obj\event_groups.crf --depend ..\obj\event_groups.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -1846,13 +1846,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1866,10 +1866,10 @@ I (..\FreeRTOS\include\timers.h)(0x5A3842D8)
 I (..\FreeRTOS\include\event_groups.h)(0x5A3842D8)
 F (..\FreeRTOS\list.c)(0x5A3842D8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\list.o --omf_browse ..\obj\list.crf --depend ..\obj\list.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -1912,13 +1912,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1930,10 +1930,10 @@ I (..\FreeRTOS\include\list.h)(0x5A3842D8)
 F (..\FreeRTOS\queue.c)(0x5A3842DA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\queue.o --omf_browse ..\obj\queue.crf --depend ..\obj\queue.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -1975,13 +1975,13 @@ I (..\BSP\common.h)(0x5AEFDE59)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -1992,13 +1992,13 @@ I (..\FreeRTOS\include\mpu_wrappers.h)(0x5A3842D8)
 I (..\FreeRTOS\include\task.h)(0x5A3842D8)
 I (..\FreeRTOS\include\list.h)(0x5A3842D8)
 I (..\FreeRTOS\include\queue.h)(0x5A3842D8)
-F (..\FreeRTOS\tasks.c)(0x5AE96C34)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\tasks.o --omf_browse ..\obj\tasks.crf --depend ..\obj\tasks.d)
+F (..\FreeRTOS\tasks.c)(0x5AFAC60A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\tasks.o --omf_browse ..\obj\tasks.crf --depend ..\obj\tasks.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -2040,13 +2040,13 @@ I (..\BSP\common.h)(0x5AEFDE59)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -2060,10 +2060,10 @@ I (..\FreeRTOS\include\timers.h)(0x5A3842D8)
 I (..\FreeRTOS\include\stack_macros.h)(0x5A3842D8)
 F (..\FreeRTOS\timers.c)(0x5A3842DA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\timers.o --omf_browse ..\obj\timers.crf --depend ..\obj\timers.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -2106,13 +2106,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -2126,10 +2126,10 @@ I (..\FreeRTOS\include\queue.h)(0x5A3842D8)
 I (..\FreeRTOS\include\timers.h)(0x5A3842D8)
 F (..\FreeRTOS\portable\MemMang\heap_4.c)(0x5A3842DA)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\heap_4.o --omf_browse ..\obj\heap_4.crf --depend ..\obj\heap_4.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -2172,13 +2172,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -2188,11 +2188,11 @@ I (..\FreeRTOS\portable\Keil\ARM_CM3\portmacro.h)(0x5A3842DA)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x5A3842D8)
 I (..\FreeRTOS\include\task.h)(0x5A3842D8)
 I (..\FreeRTOS\include\list.h)(0x5A3842D8)
-F (..\FreeRTOS\portable\Keil\ARM_CM3\port.c)(0x5AE97DAC)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\port.o --omf_browse ..\obj\port.crf --depend ..\obj\port.d)
-I (..\FreeRTOS\include\FreeRTOS.h)(0x5A3842D8)
+F (..\FreeRTOS\portable\Keil\ARM_CM3\port.c)(0x5AFAD683)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\HALLIB\Inc -I..\HALLIB\Inc\Legacy -I..\USER -I..\BSP\NUCLEO -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\BSP\TIMER -I..\BSP\algorithm -I..\BSP\BC95_AT -I..\BSP -I..\BSP\IIC -I..\BSP\I2C_OLED -I..\BSP\algorithm -I..\BSP\BC95 -I..\BSP\KEY -I..\BSP\LOWPOWER -I..\BSP\LED -I..\BSP\ADC -I..\BSP\IO -I..\FreeRTOS\include -I..\FreeRTOS\portable\Keil\ARM_CM3 -I..\FreeRTOS\portable\MemMang -I..\BSP\MYTASK -I..\BSP\IWDG -I..\BSP\WWDG --C99-I I:\Github\Neyzoter\Codes\Stress-Monitor-Based-on-NB-IoT\USER\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32L1xx_DFP\1.0.2\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32L1XX_MD -DSTM32L152xB -DUSE_HAL_DRIVER-o ..\obj\port.o --omf_browse ..\obj\port.crf --depend ..\obj\port.d)
+I (..\FreeRTOS\include\FreeRTOS.h)(0x5AFACC2B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x53463A44)
-I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AE0780D)
+I (..\FreeRTOS\include\FreeRTOSConfig.h)(0x5AFACC2B)
 I (..\USER\main.h)(0x5AD33BDB)
 I (..\HALLIB\Inc\stm32l1xx_hal.h)(0x59A433AE)
 I (..\USER\stm32l1xx_hal_conf.h)(0x5A86942B)
@@ -2236,13 +2236,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x53463A44)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x53463A44)
 I (..\BSP\TIMER\timer.h)(0x5ADD714B)
 I (..\BSP\I2C_OLED\I2C_OLED.h)(0x5AEFDFF3)
-I (..\BSP\BC95\BC95.h)(0x5AEFD850)
+I (..\BSP\BC95\BC95.h)(0x5AFAD059)
 I (..\BSP\KEY\key.h)(0x5ADD71A8)
 I (..\BSP\LED\led.h)(0x5ADD71A8)
 I (..\BSP\ADC\adc.h)(0x5ADD71A8)
 I (..\BSP\algorithm\algorithm.h)(0x5AEFD709)
 I (..\BSP\IO\io.h)(0x5ADD71A8)
-I (..\BSP\LOWPOWER\lowpower.h)(0x5ADD71A8)
+I (..\BSP\LOWPOWER\lowpower.h)(0x5AFACC2B)
 I (..\BSP\IWDG\iwdg.h)(0x5ADD71A8)
 I (..\BSP\WWDG\wwdg.h)(0x5ADD71A8)
 I (..\FreeRTOS\include\projdefs.h)(0x5A3842D8)
@@ -2252,4 +2252,4 @@ I (..\FreeRTOS\portable\Keil\ARM_CM3\portmacro.h)(0x5A3842DA)
 I (..\FreeRTOS\include\mpu_wrappers.h)(0x5A3842D8)
 I (..\FreeRTOS\include\task.h)(0x5A3842D8)
 I (..\FreeRTOS\include\list.h)(0x5A3842D8)
-F (..\README.md)(0x5ADD7128)()
+F (..\README.md)(0x5AFAD863)()

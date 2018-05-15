@@ -13,8 +13,9 @@
 
 #define AT_TICKLESS_ON 1	//是否开始在BC95联网等待usart信号时，进入tickless
 #define  AT_CHECK_EVERYTIME		300 //用于在发送AT指令后，每次200ms进入一次来查看是否时间超过了设定的等待时间	
-
-
+#define WAITINGTIME_Y    3//显示等待时间的纵坐标
+#define WAITINGTIME_X    12//显示等待时间的横坐标
+#define WAITINGTIME_DISP_DIGITS    4//显示等待时间的横坐标
 //总体步骤
 u8 AttachNetwork(void);
 //基本函数

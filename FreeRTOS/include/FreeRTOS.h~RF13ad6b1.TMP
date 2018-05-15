@@ -749,11 +749,7 @@ extern "C" {
 #ifndef configPOST_SLEEP_PROCESSING
 	#define configPOST_SLEEP_PROCESSING( x )
 #endif
-	
-#ifndef configREAL_WAITINGTIME_PROCESSING
-	#define configREAL_WAITINGTIME_PROCESSING( x )
-#endif	
-	
+
 #ifndef configUSE_QUEUE_SETS
 	#define configUSE_QUEUE_SETS 0
 #endif

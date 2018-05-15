@@ -15,11 +15,18 @@
 
 extern void PreSleepProcessing(uint32_t ulExpectedTime);
 extern void PostSleepProcessing(uint32_t ulExpectedTime);
-	
+extern void RealWaitingTimeProcessing(uint32_t ulCompleteTickPeriods);
 ////进入低功耗模式前要做的处理
 #define configPRE_SLEEP_PROCESSING	PreSleepProcessing
 ///退出低功耗模式后要做的处理
 #define configPOST_SLEEP_PROCESSING		PostSleepProcessing
+///退出低功耗模式后得到在tickless中实际等待的时间，是否需要使用
+//应用场景：用户开了使用滴答时钟中断中放了一个计数变量，用于计数查看是否超时
+//那么如果开了Tickless就会出现进入低功耗后时间不能加上的问题
+//但是在PostSleepProcessing函数中只知道预期的时间是多少，而不是到真实事件
+//所以在vPortSuppressTicksAndSleep的PostSleepProcessing中处理完开启时钟等操作后，后期会得到
+//ulCompleteTickPeriods：实际等待的时间
+#define configREAL_WAITINGTIME_PROCESSING		RealWaitingTimeProcessing
 
 //------------------------------------------------------------------------------------------//
 

@@ -109,8 +109,7 @@ void getdata_task(void *pvParameters)
 				Adc_Val = adc_datas[0];
 			}
 //			Adc_Val/=(1.0 - mypow_float(adc_para.beta,Data_Num+1));
-			Adc_Val = adc_para.getMul * (Adc_Val + adc_para.getZero);//得到真实的数据			
-			Adc_Val = (Adc_Val>=0)?Adc_Val:0;//防止出现小于零
+
 			Num2Str(Adc_Str,Adc_Val);	
 			flag.BRD_STA = BRD_ATTACKED;//从待机唤醒的话，直接给他赋值
 //			if(!intMSG_Send((u16)Adc_Val,2))//发送int型，这里平台也要配置成int型

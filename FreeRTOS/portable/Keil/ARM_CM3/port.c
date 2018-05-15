@@ -591,7 +591,10 @@ void xPortSysTickHandler( void )
 			portNVIC_SYSTICK_CTRL_REG |= portNVIC_SYSTICK_ENABLE_BIT;
 			vTaskStepTick( ulCompleteTickPeriods );
 			portNVIC_SYSTICK_LOAD_REG = ulTimerCountsForOneTick - 1UL;
-
+			
+			//我自己加的代码
+			configREAL_WAITINGTIME_PROCESSING(ulCompleteTickPeriods);
+			
 			/* Exit with interrpts enabled. */
 			__enable_irq();
 		}

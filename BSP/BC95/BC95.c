@@ -70,9 +70,11 @@ u8 AttachNetwork(void)
 //*********************************************************************************
 void StartWaitMsg(void)
 {
+	taskENTER_CRITICAL();
 	usart.WAIT_START = 1;//开始等待
 	usart.waittime = 0;
 	usart.num = 0;
+	taskEXIT_CRITICAL();
 }
 //*******************************************************
 //函数名称：StopWaitMsg
@@ -82,9 +84,11 @@ void StartWaitMsg(void)
 //*******************************************************
 void StopWaitMsg(void)
 {
+	taskENTER_CRITICAL();
 	usart.WAIT_START = 0;//停止等待
 	usart.waittime = 0;
-
+	
+	taskEXIT_CRITICAL();
 }
 //*******************************************************
 //函数名称：AT_NRB
@@ -110,6 +114,8 @@ u8 AT_NRB(void)
 		{
 			if(usart.num>50)
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -121,9 +127,10 @@ u8 AT_NRB(void)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -161,6 +168,8 @@ u8 AT_Test(void)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -168,9 +177,10 @@ u8 AT_Test(void)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -214,6 +224,8 @@ u8 CDP_Get_Cfg(char * ip_port)
 			if(usart.num!=0&&StrCmp(rcv,usart.USART_RX_BUF))
 //			if(usart.num!=0&&StrCmp("\r\n+NCDP:180.101.147.115,5683\r\n\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -222,9 +234,11 @@ u8 CDP_Get_Cfg(char * ip_port)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			//显示等待时间
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -265,6 +279,8 @@ u8 CDP_Cfg(char * ip_port)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -274,9 +290,10 @@ u8 CDP_Cfg(char * ip_port)
 				return try_num;//返回
 //				return 1;
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -314,6 +331,8 @@ u8 CFUN_Get_Set(void)
 		{
 			if(usart.num!=0&&StrCmp("\r\n+CFUN:1\r\n\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -322,9 +341,10 @@ u8 CFUN_Get_Set(void)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -362,6 +382,8 @@ u8 CFUN_Set(void)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -370,9 +392,10 @@ u8 CFUN_Set(void)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -418,6 +441,8 @@ u8 NBAND_Get_Set(char * nband)
 			//不固定平台。可通过该函数设置5、8、20
 			if(usart.num!=0&&StrCmp(rcv,usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -426,9 +451,10 @@ u8 NBAND_Get_Set(char * nband)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -468,6 +494,8 @@ u8 NBAND_Set(char * nband)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -475,9 +503,10 @@ u8 NBAND_Set(char * nband)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -517,6 +546,8 @@ u8 CGATT_Get_Set(void)
 		{
 			if(usart.num!=0&&StrCmp("\r\n+CGATT:1\r\n\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -525,9 +556,10 @@ u8 CGATT_Get_Set(void)
 
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 
 		}
@@ -566,15 +598,18 @@ u8 CGATT_Set(void)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
 				vTaskDelay(NEXT_AT_WAIT_TIME);
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");
@@ -619,6 +654,8 @@ u8 intMSG_Send(u16 num,u8 len)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -626,9 +663,10 @@ u8 intMSG_Send(u16 num,u8 len)
 				vTaskDelay(NEXT_AT_WAIT_TIME);				
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 		}
 		sgnDisp("- OVERTIME -");
 		vTaskDelay(NEXT_AT_WAIT_TIME);
@@ -671,6 +709,8 @@ u8 MSG_Send(char * msg,char * len)
 		{
 			if(usart.num!=0&&StrCmp("\r\nOK\r\n",usart.USART_RX_BUF))
 			{
+				//清除等待时间
+				OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 				//关闭等待
 				StopWaitMsg();//停止等待信息
 				MsgDisp(LINE_FEED);
@@ -678,9 +718,10 @@ u8 MSG_Send(char * msg,char * len)
 				vTaskDelay(NEXT_AT_WAIT_TIME);				
 				return try_num;//返回
 			}
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 		}
 		sgnDisp("- OVERTIME -");
 		vTaskDelay(NEXT_AT_WAIT_TIME);
@@ -728,6 +769,8 @@ u8 CMD_Get(void)
 					usart.USART_RX_BUF[i-4]=='O'&&
 					usart.USART_RX_BUF[i-3]=='K')
 				{
+					//清除等待时间
+					OLED_ShowStr(WAITINGTIME_X,WAITINGTIME_Y,"    ",1);
 					cmdgot.status = CMD_Anls(usart.USART_RX_BUF);
 					if(cmdgot.len != HexStr2Str(cmdgot.lastcmd,cmdgot.str))//如果位数不相等
 						cmdgot.status = CMD_GOT_FORMAT_ERROR;//数据格式错误
@@ -742,9 +785,10 @@ u8 CMD_Get(void)
 					break;
 			}
 			i++;
-		#ifdef AT_TICKLESS_ON 
-			vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
-		#endif
+			OLED_ShowNum(WAITINGTIME_X, WAITINGTIME_Y, usart.waittime, WAITINGTIME_DISP_DIGITS,1);
+			#ifdef AT_TICKLESS_ON 
+				vTaskDelay(AT_CHECK_EVERYTIME);//每200ms进入一次查看是否有数据
+			#endif
 			
 		}
 		sgnDisp("- OVERTIME -");

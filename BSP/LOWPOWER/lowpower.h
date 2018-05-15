@@ -21,7 +21,7 @@ void Sys_Entry_Standby(void);
 void RTC_Init(u16 WKUP_Seconds);
 void PreSleepProcessing(uint32_t ulExpectedTime);
 void PostSleepProcessing(uint32_t ulExpectedTime);
-
+void RealWaitingTimeProcessing(uint32_t ulCompleteTickPeriods);
 
 
 #endif

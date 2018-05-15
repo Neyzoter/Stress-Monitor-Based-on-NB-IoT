@@ -125,10 +125,16 @@ void PostSleepProcessing(uint32_t ulExpectedTime)
 {
 	LED2_CLK_ENABLE;//PD
 	LED1_CLK_ENABLE;//PC
-	LMCS_CLK_ENABLE;//PC时钟	
-	
+	LMCS_CLK_ENABLE;//PC时钟
+
+
 }
 
+void RealWaitingTimeProcessing(uint32_t ulCompleteTickPeriods)
+{
+	if(usart.WAIT_START)	
+		usart.waittime += ulCompleteTickPeriods;	
+}
 //RTC的WKUP唤醒中断
 void HAL_RTCEx_WakeUpTimerEventCallback(RTC_HandleTypeDef *hrtc)
 {
