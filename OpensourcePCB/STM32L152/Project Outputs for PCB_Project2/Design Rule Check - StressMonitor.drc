@@ -1,0 +1,50 @@
+Protel Design System Design Rule Check
+PCB File : G:\立项\毕业设计\MyPCB\STM32+应力监测+TPS电源\StressMonitor.PcbDoc
+Date     : 2018/5/14
+Time     : 23:59:23
+
+Processing Rule : Width Constraint (Min=0.3mm) (Max=0.8mm) (Preferred=0.6mm) ((InNet('AGND') AND InNet('GND')))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.3mm) (Max=0.8mm) (Preferred=0.5mm) ((InNet('PWR_IN1') OR InNet('PWR_IN2') OR InNet('PWR_MCU') OR InNet('VDDA') OR InNet('PWR_SGN')))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.256mm) (Max=0.8mm) (Preferred=0.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=4mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:01

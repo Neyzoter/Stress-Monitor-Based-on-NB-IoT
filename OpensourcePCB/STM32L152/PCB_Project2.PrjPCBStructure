@@ -1,0 +1,2 @@
+Record=TopLevelDocument|FileName=StressMonitor.SchDoc
+Record=HARD_PROCESSOR_COMPONENT|BaseComponentDesignator=U1|DocumentName=StressMonitor.SchDoc|LibraryReference=STM32F103RDT6|SubProjectPath= |Configuration= |Description= |NexusDeviceId=STM32F103RDT6|SubPartUniqueId1=HCDGDGCQ|SubPartDocPath1=StressMonitor.SchDoc

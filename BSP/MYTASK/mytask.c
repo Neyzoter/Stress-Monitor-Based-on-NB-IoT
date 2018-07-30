@@ -28,7 +28,7 @@ struct ADC_PARA
 	int getZero ;
 	float getMul ;
 	float beta;
-}adc_para = {-1865,3.28,0.8};
+}adc_para = {-1866,3.28,0.8};
 
 
 ////////////////////////////////////////////////////////////
