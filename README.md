@@ -4,6 +4,8 @@
 
 联网后周期性的发送数据，并进入待机模式。于此同时开启了Tickless，会在空闲时进入睡眠模式。
 
+开源硬件地址：[https://github.com/Neyzoter/Stress-Monitor-Based-on-NB-IoT/tree/master/OpensourcePCB/STM32L152](https://github.com/Neyzoter/Stress-Monitor-Based-on-NB-IoT/tree/master/OpensourcePCB/STM32L152 "OpensourcePCB")
+
 版本：2018-5-15
 
 # 版本修改说明
@@ -97,8 +99,6 @@ Tickless进入后，需要关闭某一些低功耗时候不需要的时钟，比
 
 # 其他
 
-硬件已开源，见
-
-如果本代码有什么问题，联系我。
+如果本代码和PCB有什么问题，联系我。
 
 Email: sonechaochao@gmail.com
